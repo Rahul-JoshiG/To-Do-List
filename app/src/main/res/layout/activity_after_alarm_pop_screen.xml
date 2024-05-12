@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:background="@drawable/dialog_background">
+
+        <TextView
+            android:id="@+id/remainder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/remainder"
+            android:textSize="26sp"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:id="@+id/titleOfToDo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text=""
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="20dp"/>
+
+        <LinearLayout
+            style="?android:attr/buttonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/stopAlarm"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dismiss"
+                android:textSize="20sp"
+                android:textColor="@android:color/white"
+                android:backgroundTint="@color/red"
+                android:layout_marginBottom="10dp" />
+
+            <Button
+                android:id="@+id/openToDo"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/open_to_do"
+                android:textSize="20sp"
+                android:textColor="@android:color/white"
+                android:backgroundTint="@color/blue"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="120dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

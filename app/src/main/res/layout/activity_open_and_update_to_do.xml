@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".OpenAndUpdateToDo"
+        android:layout_margin="9dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/header"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/previousScreen"
+                android:src="@drawable/back_vector"
+                android:contentDescription="@string/back_to_home" />
+
+            <ImageView
+                android:id="@+id/saveList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/check_vector"
+                android:visibility="invisible"
+                android:layout_alignParentEnd="true"
+                android:contentDescription="@string/save_the_list" />
+        </RelativeLayout>
+
+        <EditText
+            android:padding="11dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/listTitle"
+            android:layout_below="@+id/header"
+            android:textSize="24sp"
+            android:layout_marginTop="11dp"
+            android:textStyle="bold"
+            android:inputType="text"
+            android:hint="@string/new_task"
+            android:background="@null"
+            android:backgroundTint="@null"
+            android:autofillHints="List Title" />
+
+        <EditText
+            android:id="@+id/listDescription"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/listTitle"
+            android:inputType="text"
+            android:layout_marginTop="11dp"
+            android:autofillHints="List Description"
+            android:background="@null"
+            android:backgroundTint="@null"
+            android:gravity="top|start"
+            android:padding="11dp"
+            android:hint="@string/task_description"
+            android:textSize="18sp"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </RelativeLayout>
+</layout>
